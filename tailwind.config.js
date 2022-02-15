@@ -1,5 +1,5 @@
 module.exports = {
-  content: [],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -7,9 +7,12 @@ module.exports = {
         grayishBlue: "hsl(240, 18%, 77%)",
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-      }
+        inter: ["Inter", "sans-serif"],
+      },
+      backgroundImage: {
+        patternbg: "url('./images/pattern-bg.svg')",
+      },
     },
   },
   plugins: [],
-}
+};
